@@ -415,14 +415,14 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 6px;
-      padding: var(--space-5);
+      padding: var(--space-3) var(--space-4);
     }
 
-    .pub-meta {
-      display: flex;
-      align-items: baseline;
+    .pub-card-inner {
+      display: grid;
+      grid-template-columns: 32px 1fr;
       gap: var(--space-2);
-      margin-bottom: var(--space-2);
+      align-items: baseline;
     }
 
     .pub-index {
@@ -432,11 +432,23 @@
       flex-shrink: 0;
     }
 
+    .pub-body {
+      min-width: 0;
+    }
+
+    .pub-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      line-height: 1.5;
+      color: var(--text-primary);
+      margin-bottom: var(--space-1);
+    }
+
     .pub-authors {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       line-height: 1.5;
       color: var(--text-secondary);
-      margin-bottom: var(--space-2);
+      margin-bottom: var(--space-1);
     }
 
     .pub-authors .corresponding {
@@ -444,16 +456,8 @@
       color: var(--text-primary);
     }
 
-    .pub-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-      line-height: 1.5;
-      color: var(--text-primary);
-      margin-bottom: var(--space-2);
-    }
-
     .pub-venue {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-style: italic;
       line-height: 1.5;
       color: var(--text-secondary);
@@ -826,164 +830,256 @@
       <ol class="pub-list">
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[1]</span></div>
-          <p class="pub-title">A Configurable Four-State Hybrid PUF Against Machine Learning Attacks</p>
-          <p class="pub-authors">G. Zhang, H. Ji, W. Fan and <span class="corresponding">Y. Wang*</span></p>
-          <p class="pub-venue">IEEE Internet of Things Journal, vol. 13, no. 2, pp. 2395-2407, Jan. 2026.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[1]</span>
+            <div class="pub-body">
+              <p class="pub-title">A Configurable Four-State Hybrid PUF Against Machine Learning Attacks</p>
+              <p class="pub-authors">G. Zhang, H. Ji, W. Fan and <span class="corresponding">Y. Wang*</span></p>
+              <p class="pub-venue">IEEE Internet of Things Journal, vol. 13, no. 2, pp. 2395-2407, Jan. 2026.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[2]</span></div>
-          <p class="pub-title">A High-Reliability, Non-CRP-Discard Arbiter PUF Based on Delay Difference Quantization</p>
-          <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, G. Zhang, X. Mei and <span class="corresponding">C. Gu*</span></p>
-          <p class="pub-venue">IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 72, no. 2, pp. 573-585, Feb. 2025.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[2]</span>
+            <div class="pub-body">
+              <p class="pub-title">A High-Reliability, Non-CRP-Discard Arbiter PUF Based on Delay Difference Quantization</p>
+              <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, G. Zhang, X. Mei and <span class="corresponding">C. Gu*</span></p>
+              <p class="pub-venue">IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 72, no. 2, pp. 573-585, Feb. 2025.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[3]</span></div>
-          <p class="pub-title">Three-Level-Assisted Hybrid Dickson Converter with Dual-Inductor for High Voltage Conversion Ratio Applications</p>
-          <p class="pub-authors">R. Chen, J. J. Liou and <span class="corresponding">Y. Wang*</span></p>
-          <p class="pub-venue">IEEE Journal of Emerging and Selected Topics in Power Electronics, Aug. 5, 2024.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[3]</span>
+            <div class="pub-body">
+              <p class="pub-title">Three-Level-Assisted Hybrid Dickson Converter with Dual-Inductor for High Voltage Conversion Ratio Applications</p>
+              <p class="pub-authors">R. Chen, J. J. Liou and <span class="corresponding">Y. Wang*</span></p>
+              <p class="pub-venue">IEEE Journal of Emerging and Selected Topics in Power Electronics, Aug. 5, 2024.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[4]</span></div>
-          <p class="pub-title">A Lightweight Authentication Protocol Against Modeling Attacks Based on a Novel LFSR-APUF</p>
-          <p class="pub-authors"><span class="corresponding">Y. Wang*</span> et al.</p>
-          <p class="pub-venue">IEEE Internet of Things Journal, vol. 11, no. 1, pp. 283-295, 1 Jan. 2024.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[4]</span>
+            <div class="pub-body">
+              <p class="pub-title">A Lightweight Authentication Protocol Against Modeling Attacks Based on a Novel LFSR-APUF</p>
+              <p class="pub-authors"><span class="corresponding">Y. Wang*</span> et al.</p>
+              <p class="pub-venue">IEEE Internet of Things Journal, vol. 11, no. 1, pp. 283-295, 1 Jan. 2024.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[5]</span></div>
-          <p class="pub-title">A Wideband Differential Linear Low-Noise Transconductance Amplifier with Active-Combiner Feedback in Complementary MGTR Configurations</p>
-          <p class="pub-authors"><span class="corresponding">B. Guo*</span>, J. Gong, and Y. Wang</p>
-          <p class="pub-venue">IEEE Transactions on Circuits and Systems I: Regular Papers, pp. 1–14, 2020.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[5]</span>
+            <div class="pub-body">
+              <p class="pub-title">A Wideband Differential Linear Low-Noise Transconductance Amplifier with Active-Combiner Feedback in Complementary MGTR Configurations</p>
+              <p class="pub-authors"><span class="corresponding">B. Guo*</span>, J. Gong, and Y. Wang</p>
+              <p class="pub-venue">IEEE Transactions on Circuits and Systems I: Regular Papers, pp. 1–14, 2020.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[6]</span></div>
-          <p class="pub-title">A Programmable Frequency Divider with a Full Modulus Range and 50% Output Duty Cycle</p>
-          <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, Y. Wang, Z. Wu, Z. Quan, and J. J. Liou</p>
-          <p class="pub-venue">IEEE Access, vol. 8, pp. 102032–102039, 2020.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[6]</span>
+            <div class="pub-body">
+              <p class="pub-title">A Programmable Frequency Divider with a Full Modulus Range and 50% Output Duty Cycle</p>
+              <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, Y. Wang, Z. Wu, Z. Quan, and J. J. Liou</p>
+              <p class="pub-venue">IEEE Access, vol. 8, pp. 102032–102039, 2020.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[7]</span></div>
-          <p class="pub-title">A Low-Power High-Speed Dynamic Comparator with a Transconductance-Enhanced Latching Stage</p>
-          <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, M. Yao, B. Guo, Z. Wu, W. Fan and J. J. Liou</p>
-          <p class="pub-venue">IEEE Access, vol. 7, pp. 93396-93403, July 2019.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[7]</span>
+            <div class="pub-body">
+              <p class="pub-title">A Low-Power High-Speed Dynamic Comparator with a Transconductance-Enhanced Latching Stage</p>
+              <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, M. Yao, B. Guo, Z. Wu, W. Fan and J. J. Liou</p>
+              <p class="pub-venue">IEEE Access, vol. 7, pp. 93396-93403, July 2019.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[8]</span></div>
-          <p class="pub-title">A 300 nW 10 kHz Relaxation Oscillator with 105 ppm/°C Temperature Coefficient</p>
-          <p class="pub-authors">C. Li, <span class="corresponding">Y. Wang*</span>, B. Guo, T. Chen and L. Sun</p>
-          <p class="pub-venue">Circuits, Systems, and Signal Processing, vol. 40, pp. 5264–5279, 2021.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[8]</span>
+            <div class="pub-body">
+              <p class="pub-title">A 300 nW 10 kHz Relaxation Oscillator with 105 ppm/°C Temperature Coefficient</p>
+              <p class="pub-authors">C. Li, <span class="corresponding">Y. Wang*</span>, B. Guo, T. Chen and L. Sun</p>
+              <p class="pub-venue">Circuits, Systems, and Signal Processing, vol. 40, pp. 5264–5279, 2021.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[9]</span></div>
-          <p class="pub-title">Design of a Passive UHF RFID Tag for the ISO18000-6C Protocol</p>
-          <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, G. Wen, W. Mao, et al.</p>
-          <p class="pub-venue">Journal of Semiconductors, vol. 32, no. 5, 2011.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[9]</span>
+            <div class="pub-body">
+              <p class="pub-title">Design of a Passive UHF RFID Tag for the ISO18000-6C Protocol</p>
+              <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, G. Wen, W. Mao, et al.</p>
+              <p class="pub-venue">Journal of Semiconductors, vol. 32, no. 5, 2011.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[10]</span></div>
-          <p class="pub-title">A low-power CMOS smart temperature sensor for RFID application</p>
-          <p class="pub-authors"><span class="corresponding">L. Xie*</span>, J. Liu, Y. Wang, etc.</p>
-          <p class="pub-venue">Journal of Semiconductors, 35(11), Nov. 2014.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[10]</span>
+            <div class="pub-body">
+              <p class="pub-title">A low-power CMOS smart temperature sensor for RFID application</p>
+              <p class="pub-authors"><span class="corresponding">L. Xie*</span>, J. Liu, Y. Wang, etc.</p>
+              <p class="pub-venue">Journal of Semiconductors, 35(11), Nov. 2014.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[11]</span></div>
-          <p class="pub-title">One-step Sneak-path Free Read Scheme for Resistive Crossbar Memory</p>
-          <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, L. Gopalakrishnan, H. Wang, G. Wen</p>
-          <p class="pub-venue">ACM Journal on Emerging Technologies in Computing Systems, vol. 13, no. 2, 2017.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[11]</span>
+            <div class="pub-body">
+              <p class="pub-title">One-step Sneak-path Free Read Scheme for Resistive Crossbar Memory</p>
+              <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, L. Gopalakrishnan, H. Wang, G. Wen</p>
+              <p class="pub-venue">ACM Journal on Emerging Technologies in Computing Systems, vol. 13, no. 2, 2017.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[12]</span></div>
-          <p class="pub-title">A Mixer-First Receiver Frontend with Resistive-Feedback Baseband Achieving 200 MHz IF Bandwidth in 65 nm CMOS</p>
-          <p class="pub-authors">B. Guo, H. Wang, Y. Wang, K. Li, L. Li and W. Zhou</p>
-          <p class="pub-venue">IEEE Radio Frequency Integrated Circuits Symposium (RFIC), Denver, CO, USA, 2022, pp. 31-34.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[12]</span>
+            <div class="pub-body">
+              <p class="pub-title">A Mixer-First Receiver Frontend with Resistive-Feedback Baseband Achieving 200 MHz IF Bandwidth in 65 nm CMOS</p>
+              <p class="pub-authors">B. Guo, H. Wang, Y. Wang, K. Li, L. Li and W. Zhou</p>
+              <p class="pub-venue">IEEE Radio Frequency Integrated Circuits Symposium (RFIC), Denver, CO, USA, 2022, pp. 31-34.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[13]</span></div>
-          <p class="pub-title">A wideband complementary noise cancelling CMOS LNA</p>
-          <p class="pub-authors">B. Guo, J. Chen, Y. Wang, H. Jin, G. Yang</p>
-          <p class="pub-venue">IEEE Radio Frequency Integrated Circuits Symposium (RFIC), San Francisco, CA, USA, 2016, pp. 142-145.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[13]</span>
+            <div class="pub-body">
+              <p class="pub-title">A wideband complementary noise cancelling CMOS LNA</p>
+              <p class="pub-authors">B. Guo, J. Chen, Y. Wang, H. Jin, G. Yang</p>
+              <p class="pub-venue">IEEE Radio Frequency Integrated Circuits Symposium (RFIC), San Francisco, CA, USA, 2016, pp. 142-145.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[14]</span></div>
-          <p class="pub-title">Modeling Attack Resistant Arbiter PUF with Time-Variant Obfuscation Scheme</p>
-          <p class="pub-authors">Z. Chang, S. Shi, B. Song, W. Fan and <span class="corresponding">Y. Wang*</span></p>
-          <p class="pub-venue">International Conference on Field-Programmable Logic and Applications (FPL), Dresden, Germany, 2021, pp. 60-63.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[14]</span>
+            <div class="pub-body">
+              <p class="pub-title">Modeling Attack Resistant Arbiter PUF with Time-Variant Obfuscation Scheme</p>
+              <p class="pub-authors">Z. Chang, S. Shi, B. Song, W. Fan and <span class="corresponding">Y. Wang*</span></p>
+              <p class="pub-venue">International Conference on Field-Programmable Logic and Applications (FPL), Dresden, Germany, 2021, pp. 60-63.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[15]</span></div>
-          <p class="pub-title">Modeling Attack Resistant Arbiter PUF based on Dynamic Finite Field Matrix Multiplication scheme</p>
-          <p class="pub-authors">S. Shi, Z. Chang, B. Guo and <span class="corresponding">Y. Wang*</span></p>
-          <p class="pub-venue">IEEE International Conference on Solid-State &amp; Integrated Circuit Technology (ICSICT), Nanjing, China, 2022, pp. 1-3.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[15]</span>
+            <div class="pub-body">
+              <p class="pub-title">Modeling Attack Resistant Arbiter PUF based on Dynamic Finite Field Matrix Multiplication scheme</p>
+              <p class="pub-authors">S. Shi, Z. Chang, B. Guo and <span class="corresponding">Y. Wang*</span></p>
+              <p class="pub-venue">IEEE International Conference on Solid-State &amp; Integrated Circuit Technology (ICSICT), Nanjing, China, 2022, pp. 1-3.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[16]</span></div>
-          <p class="pub-title">A 40.6 ppm/°C 368 nW 10 kHz Relaxation Oscillator with Temperature-Sensor-based Piece-Wise Compensation Technique</p>
-          <p class="pub-authors">R. Chen, Y. Ma and <span class="corresponding">Y. Wang*</span></p>
-          <p class="pub-venue">IEEE Asia Pacific Conference on Circuits and Systems (APCCAS), Shenzhen, China, 2022, pp. 1-5.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[16]</span>
+            <div class="pub-body">
+              <p class="pub-title">A 40.6 ppm/°C 368 nW 10 kHz Relaxation Oscillator with Temperature-Sensor-based Piece-Wise Compensation Technique</p>
+              <p class="pub-authors">R. Chen, Y. Ma and <span class="corresponding">Y. Wang*</span></p>
+              <p class="pub-venue">IEEE Asia Pacific Conference on Circuits and Systems (APCCAS), Shenzhen, China, 2022, pp. 1-5.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[17]</span></div>
-          <p class="pub-title">A 22 mW CMOS Receiver Frontend Using Active-Feedback Baseband and Passive-Voltage Mixers Embedded in Current Mirrors</p>
-          <p class="pub-authors">B. Guo, X. Liao and Y. Wang</p>
-          <p class="pub-venue">IEEE Asia Pacific Conference on Circuits and Systems (APCCAS), Shenzhen, China, 2022, pp. 324-328.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[17]</span>
+            <div class="pub-body">
+              <p class="pub-title">A 22 mW CMOS Receiver Frontend Using Active-Feedback Baseband and Passive-Voltage Mixers Embedded in Current Mirrors</p>
+              <p class="pub-authors">B. Guo, X. Liao and Y. Wang</p>
+              <p class="pub-venue">IEEE Asia Pacific Conference on Circuits and Systems (APCCAS), Shenzhen, China, 2022, pp. 324-328.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[18]</span></div>
-          <p class="pub-title">A 60 GHz single-to-differential LNA using slow-wave CPW and transformer coupling in 28 nm CMOS</p>
-          <p class="pub-authors">B. Guo, H. Liu, Y. Wang and J. Chen</p>
-          <p class="pub-venue">IEEE International Conference on ASIC (ASICON), Chongqing, China, 2019, pp. 1-4.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[18]</span>
+            <div class="pub-body">
+              <p class="pub-title">A 60 GHz single-to-differential LNA using slow-wave CPW and transformer coupling in 28 nm CMOS</p>
+              <p class="pub-authors">B. Guo, H. Liu, Y. Wang and J. Chen</p>
+              <p class="pub-venue">IEEE International Conference on ASIC (ASICON), Chongqing, China, 2019, pp. 1-4.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[19]</span></div>
-          <p class="pub-title">Low Power High Speed Dynamic Comparator Using a New Regenerative Stage</p>
-          <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, H. Yang, W. Fan, J. J. Liou</p>
-          <p class="pub-venue">IEEE International Conference on Electron Devices and Solid-State Circuits (EDSSC), Shenzhen, China, 2018, pp. 1-2. (Invited)</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[19]</span>
+            <div class="pub-body">
+              <p class="pub-title">Low Power High Speed Dynamic Comparator Using a New Regenerative Stage</p>
+              <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, H. Yang, W. Fan, J. J. Liou</p>
+              <p class="pub-venue">IEEE International Conference on Electron Devices and Solid-State Circuits (EDSSC), Shenzhen, China, 2018, pp. 1-2. (Invited)</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[20]</span></div>
-          <p class="pub-title">Design of Prioritized LRU Circuit for Shared Cache in Real-Time Computer Systems</p>
-          <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, L. Gopalakrishnan, H. Wang, and R. Eaton</p>
-          <p class="pub-venue">IEEE International Conference on Solid-state and Integrated Circuit Technology (ICSICT), Hangzhou, China, 2016, pp. 573-575.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[20]</span>
+            <div class="pub-body">
+              <p class="pub-title">Design of Prioritized LRU Circuit for Shared Cache in Real-Time Computer Systems</p>
+              <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, L. Gopalakrishnan, H. Wang, and R. Eaton</p>
+              <p class="pub-venue">IEEE International Conference on Solid-state and Integrated Circuit Technology (ICSICT), Hangzhou, China, 2016, pp. 573-575.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[21]</span></div>
-          <p class="pub-title">A Novel Envelope Edge Detector for Ultra-low Power Sensor Wake-up Circuit</p>
-          <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, H. Wang, G. Wen</p>
-          <p class="pub-venue">IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED), Beijing, China, 2013, pp. 371-376.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[21]</span>
+            <div class="pub-body">
+              <p class="pub-title">A Novel Envelope Edge Detector for Ultra-low Power Sensor Wake-up Circuit</p>
+              <p class="pub-authors"><span class="corresponding">Y. Wang*</span>, H. Wang, G. Wen</p>
+              <p class="pub-venue">IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED), Beijing, China, 2013, pp. 371-376.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[22]</span></div>
-          <p class="pub-title">Current Reference with Temperature Compensation for Low Power Applications</p>
-          <p class="pub-authors">J. Liu, Y. Wang, L. Xie, G. Wen</p>
-          <p class="pub-venue">IEEE Asia Pacific Conference on Circuits and Systems (APCCAS), Kaohsiung, Taiwan, 2012, pp. 527-530.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[22]</span>
+            <div class="pub-body">
+              <p class="pub-title">Current Reference with Temperature Compensation for Low Power Applications</p>
+              <p class="pub-authors">J. Liu, Y. Wang, L. Xie, G. Wen</p>
+              <p class="pub-venue">IEEE Asia Pacific Conference on Circuits and Systems (APCCAS), Kaohsiung, Taiwan, 2012, pp. 527-530.</p>
+            </div>
+          </div>
         </li>
 
         <li class="pub-card">
-          <div class="pub-meta"><span class="pub-index">[23]</span></div>
-          <p class="pub-title">A 1-V DTMOS-Based Fully Differential Telescopic OTA</p>
-          <p class="pub-authors">J. Liu, Y. Han, L. Xie, Y. Wang and G. Wen</p>
-          <p class="pub-venue">IEEE Asia Pacific Conference on Circuits and Systems (APCCAS), Ishigaki, Japan, 2014, pp. 49-52.</p>
+          <div class="pub-card-inner">
+            <span class="pub-index">[23]</span>
+            <div class="pub-body">
+              <p class="pub-title">A 1-V DTMOS-Based Fully Differential Telescopic OTA</p>
+              <p class="pub-authors">J. Liu, Y. Han, L. Xie, Y. Wang and G. Wen</p>
+              <p class="pub-venue">IEEE Asia Pacific Conference on Circuits and Systems (APCCAS), Ishigaki, Japan, 2014, pp. 49-52.</p>
+            </div>
+          </div>
         </li>
 
       </ol>
